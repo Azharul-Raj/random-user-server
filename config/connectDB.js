@@ -1,5 +1,5 @@
-const MongoClient=require('mongodb')
-const uri=""
+const {MongoClient}=require('mongodb')
+const uri="mongodb://127.0.0.1:27017"
 const client=new MongoClient(uri);
 module.exports.connectDB=async()=>{
     try {
@@ -9,3 +9,4 @@ module.exports.connectDB=async()=>{
         console.log(error);
     }
 }
+module.exports.users=client.db("random_users").collection("users")
