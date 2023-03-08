@@ -9,4 +9,4 @@ module.exports.connectDB=async()=>{
         console.log(error);
     }
 }
-module.exports.users=client.db("random_users").collection("users")
+module.exports.Users= client.db("random_users").collection("users")
