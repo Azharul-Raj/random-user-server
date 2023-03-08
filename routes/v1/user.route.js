@@ -8,7 +8,8 @@ const userController=require("../../controllers/user.controller")
 router.get("/:random",userController.getAUser);
 router.get("/",userController.getAllUsers);
 router.post("/:save",userController.addUser);
-
+router.patch("/:id",userController.updateUser)
+router.patch("/",userController.updateMultiple)
 router.delete("/:id",userController.deleteUser)
 
 

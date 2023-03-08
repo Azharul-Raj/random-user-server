@@ -29,8 +29,12 @@ connectDB()
 //     res.send(result)
 // })
 
-app.use("/v1/users",getAUserRouter);
+app.use("/v1/users/random",getAUserRouter);
+app.use("/v1/users/all",getAUserRouter);
+app.use("/v1/user/save",getAUserRouter);
 app.use("/v1/users/delete",getAUserRouter);
+app.use("/v1/users/update",getAUserRouter);
+app.use("/v1/users/bulk-update",getAUserRouter);
 
 
 
