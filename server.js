@@ -30,6 +30,7 @@ connectDB()
 // })
 
 app.use("/v1/users",getAUserRouter);
+app.use("/v1/users/delete",getAUserRouter);
 
 
 
